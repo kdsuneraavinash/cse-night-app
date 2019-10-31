@@ -1,0 +1,67 @@
+name: cse_night
+description: CSE Night Puzzle App
+
+version: 0.0.2
+
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  fluro: ^1.5.1
+  provider: ^3.0.0+1
+
+  firebase_analytics: ^4.0.2
+  firebase_core: ^0.4.0+1
+  cloud_firestore: ^0.12.9
+
+  flutter_secure_storage: ^3.2.1+1
+  url_launcher: ^5.1.2
+  photo_view: ^0.4.2
+  fast_qr_reader_view: 
+    git:
+      url: git://github.com/facundomedica/fast_qr_reader_view.git
+      commit: 05d629020b19b426c5d8f20a88d5a810ff304d7b
+  
+  material_design_icons_flutter: ^3.2.4096
+  flutter_spinkit: ^4.0.0
+  liquid_progress_indicator: ^0.3.2  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/eye.png
+    - assets/images/glitched-eye.gif
+
+    - assets/puzzles/photos/0.jpg
+    - assets/puzzles/photos/1.jpg
+    - assets/puzzles/photos/2.jpg
+    - assets/puzzles/photos/3.jpg
+    - assets/puzzles/photos/4.jpg
+
+    - assets/puzzles/numbers/0.png
+    - assets/puzzles/numbers/1.png
+    - assets/puzzles/numbers/2.png
+    - assets/puzzles/numbers/3.png
+    - assets/puzzles/numbers/4.png
+
+    - assets/puzzles/maps/0.jpg
+    # - assets/puzzles/maps/1.jpg
+    # - assets/puzzles/maps/2.jpg
+    # - assets/puzzles/maps/3.jpg
+    # - assets/puzzles/maps/4.jpg
+
+  fonts:
+    - family: Hieroglify
+      fonts:
+        - asset: assets/fonts/hieroglify.ttf
+    - family: FantaisieArtistique
+      fonts:
+        - asset: assets/fonts/fantaisie-artistique.ttf

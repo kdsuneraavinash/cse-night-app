@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "924533239520",
+    "firebase_url": "https://uom-cse-night.firebaseio.com",
+    "project_id": "uom-cse-night",
+    "storage_bucket": "uom-cse-night.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924533239520:android:150edd31017a37c6",
+        "android_client_info": {
+          "package_name": "com.kdsuneraavinash.cse_night"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924533239520-6blbe4jr5ej3830fm1qa050dpqrmhg6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kdsuneraavinash.cse_night",
+            "certificate_hash": "5dbbc04b82e1936b7a4c7d8ee49b6c1ac0524917"
+          }
+        },
+        {
+          "client_id": "924533239520-9oqcmf6g2dr1g3mc8tb63jl0ujirtb9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-7MgBB9eZRua3HG3bonrVN1iONXQkZDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924533239520-9oqcmf6g2dr1g3mc8tb63jl0ujirtb9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
