@@ -13,7 +13,7 @@ import 'package:provider/provider.dart';
 void main() => runApp(HomeScreen());
 
 class HomeScreen extends StatelessWidget {
-  final maxPlayersCount = 30;
+  static const maxPlayersCount = 30;
 
   @override
   Widget build(BuildContext context) {
@@ -31,12 +31,18 @@ class HomeScreen extends StatelessWidget {
                     stream:
                         Firestore.instance.collection('players').snapshots(),
                     builder: (context, snapshot) {
-                      int currentCount = snapshot?.data?.documents
-                              ?.where((qs) => qs?.data["finished"])
-                              ?.length ??
-                          0;
-                      if (currentCount > maxPlayersCount)
+                      int currentCount;
+                      if (snapshot == null || snapshot.data == null) {
+                        currentCount = 0;
+                      } else {
+                        currentCount = snapshot.data.documents
+                                .where((qs) => qs.data["finished"] == true)
+                                .length ??
+                            0;
+                      }
+                      if (currentCount > maxPlayersCount) {
                         currentCount = maxPlayersCount;
+                      }
                       return ProgressCircleWidget(
                         current: currentCount,
                         maxCount: maxPlayersCount,

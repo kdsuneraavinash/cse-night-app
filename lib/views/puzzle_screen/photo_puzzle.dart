@@ -1,4 +1,3 @@
-import 'package:cse_night/models/keys.dart';
 import 'package:cse_night/models/puzzles.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:cse_night/views/widgets/backdrop.dart';
@@ -15,8 +14,7 @@ class PhotoPuzzle extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "${Puzzles.puzzleName("photo")} "
-          "[${Keys.getKey("photo", index)}]",
+          "${Puzzles.puzzleName("photo")}",
         ),
         centerTitle: true,
       ),

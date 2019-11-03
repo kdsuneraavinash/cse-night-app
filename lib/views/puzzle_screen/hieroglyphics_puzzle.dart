@@ -13,8 +13,7 @@ class HieroglyphicsPuzzle extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "${Puzzles.puzzleName("hieroglyphics")} "
-          "[${Puzzles.hieroglyphicsPuzzle(index)}]",
+          "${Puzzles.puzzleName("hieroglyphics")}",
         ),
         centerTitle: true,
       ),
@@ -28,8 +27,9 @@ class HieroglyphicsPuzzle extends StatelessWidget {
               Puzzles.hieroglyphicsPuzzle(index),
               textAlign: TextAlign.center,
               style: TextStyle(
+                letterSpacing: 5,
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: 48,
                 fontFamily: "Hieroglify",
               ),
             ),

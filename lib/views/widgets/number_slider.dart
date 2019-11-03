@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NumberSlider extends StatefulWidget {
@@ -27,13 +28,13 @@ class _NumberSliderState extends State<NumberSlider> {
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
         children: <Widget>[
-          SizedBox(
-            width: MediaQuery.of(context).size.width * 0.8,
-            child: Slider(
+          Expanded(
+            child: CupertinoSlider(
               value: _value,
-              inactiveColor: widget.color.withAlpha(100),
-              label: "${_value.toInt()}",
-              divisions: 100,
+
+              // inactiveColor: widget.color.withAlpha(100),
+              // label: "${_value.toInt()}",
+              divisions: 50,
               activeColor: widget.color,
               onChanged: (double newValue) {
                 setState(() {
@@ -41,13 +42,15 @@ class _NumberSliderState extends State<NumberSlider> {
                 });
               },
               min: 0.0,
-              max: 50.0,
+              max: 30.0,
             ),
           ),
-          Padding(
+          Container(
+            width: 64,
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              widget.characters[(_value.toInt() + widget.offset) % 27],
+              "${widget.characters[(_value.toInt() + widget.offset) % 27]}"
+              " [${_value.toInt()}]",
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 color: widget.color,

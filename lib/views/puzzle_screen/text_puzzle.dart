@@ -1,4 +1,3 @@
-import 'package:cse_night/models/keys.dart';
 import 'package:cse_night/models/puzzles.dart';
 import 'package:cse_night/views/widgets/backdrop.dart';
 import 'package:flutter/material.dart';
@@ -14,8 +13,7 @@ class TextPuzzle extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "${Puzzles.puzzleName("text")} "
-          "[${Keys.getKey("text", index)}]",
+          "${Puzzles.puzzleName("text")}",
         ),
         centerTitle: true,
       ),

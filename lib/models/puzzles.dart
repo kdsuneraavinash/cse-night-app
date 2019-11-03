@@ -7,12 +7,20 @@ class Puzzles {
         "hieroglyphics",
       ];
 
+  // static String puzzleName(String puzzle) => {
+  //       "text": "Luuletus",
+  //       "photo": "Foto",
+  //       "number": "Matemaatika",
+  //       "map": "Kausta",
+  //       "hieroglyphics": "Hieroglüüf",
+  //     }[puzzle];
+
   static String puzzleName(String puzzle) => {
-        "text": "Luuletus",
-        "photo": "Foto",
-        "number": "Matemaatika",
-        "map": "Kausta",
-        "hieroglyphics": "Hieroglüüf",
+        "text": "The Poem",
+        "photo": "Photo",
+        "number": "Numbers",
+        "map": "Treasure",
+        "hieroglyphics": "Hieroglyphics",
       }[puzzle];
 
   static String textPuzzle(int index) => [
@@ -27,30 +35,30 @@ class Puzzles {
       ][index];
 
   static String photoPuzzle(int index) => [
-        "assets/puzzles/photos/0.jpg", // vizier
-        "assets/puzzles/photos/1.jpg", // amun
-        "assets/puzzles/photos/2.jpg", // senet
-        "assets/puzzles/photos/3.jpg", // thebes
+        "assets/puzzles/photos/0.jpg", // archi eke pitipassa para [vizier]
+        "assets/puzzles/photos/1.jpg", // cs palama gawa [amun]
+        "assets/puzzles/photos/2.jpg", // civil eke pitipasse wahala [senet]
+        "assets/puzzles/photos/3.jpg", // boat yard eka issara civil ek pitipasse [thebes]
       ][index];
 
   static String numberPuzzle(int index) => [
-        "assets/puzzles/numbers/0.png", // kinen
-        "assets/puzzles/numbers/1.png", // scribe
-        "assets/puzzles/numbers/2.png", // khufu
-        "assets/puzzles/numbers/3.png", // silt
+        "assets/puzzles/numbers/0.png", // examhall [kinen]
+        "assets/puzzles/numbers/1.png", // oldgym [scribe]
+        "assets/puzzles/numbers/2.png", // boatyard [khufu]
+        "assets/puzzles/numbers/3.png", // backgate [silt]
       ][index];
 
   static String mapPuzzle(int index) => [
-        "assets/puzzles/maps/0.jpg", // obelisk
-        "assets/puzzles/maps/0.jpg", // hatsheput
-        "assets/puzzles/maps/0.jpg", // ramses
-        "assets/puzzles/maps/0.jpg", // akh
+        "assets/puzzles/maps/0.jpg", // score board ek gawa [obelisk]
+        "assets/puzzles/maps/1.jpg", // L eka gawa [hatsheput]
+        "assets/puzzles/maps/2.jpg", // mech eka ehapaththe [ramses]
+        "assets/puzzles/maps/3.jpg", // civil eka pitipasse tap ek [akh]
       ][index];
 
   static String hieroglyphicsPuzzle(int index) => [
-        "akhenaten", // akhenaten
-        "akhet", // akhet
-        "capstone", // capstone
-        "demotic", // demotic
+        "medicenter", // medicenter [akhenaten]
+        "pavilion", // pavilion [akhet]
+        "poshcanteen", // poshcanteen [capstone]
+        "walacanteen", // walacanteen [demotic]
       ][index];
 }

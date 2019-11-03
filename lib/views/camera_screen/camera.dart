@@ -24,6 +24,13 @@ class _CameraUIState extends State<CameraUI> {
     _initCameraAfterSomeTime();
   }
 
+  @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
+    controller = null;
+  }
+
   void _initCameraAfterSomeTime() async {
     await Future.delayed(Duration(milliseconds: 750));
     List<CameraDescription> cameras = await AvailableCameras.cameras;

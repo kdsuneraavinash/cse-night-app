@@ -15,13 +15,6 @@ class NumberPuzzle extends StatelessWidget {
       appBar: AppBar(
         title: Text(Puzzles.puzzleName("number")),
         centerTitle: true,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(MdiIcons.numeric),
-            onPressed: () =>
-                FluroRouter.navigate(context, "/puzzles/number_answer"),
-          )
-        ],
       ),
       body: Center(
         child: PhotoView(
@@ -31,9 +24,9 @@ class NumberPuzzle extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.pop(context);
+          FluroRouter.navigate(context, "/puzzles/number_answer");
         },
-        child: Icon(MdiIcons.arrowLeft),
+        child: Icon(MdiIcons.numeric),
       ),
     );
   }

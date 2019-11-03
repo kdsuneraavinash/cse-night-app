@@ -1,7 +1,6 @@
 import 'package:cse_night/views/widgets/backdrop.dart';
 import 'package:cse_night/views/widgets/number_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class NumberAnswerScreen extends StatelessWidget {
   @override
@@ -45,15 +44,19 @@ class NumberAnswerScreen extends StatelessWidget {
               color: Colors.pink,
               offset: 6,
             ),
+            NumberSlider(
+              color: Colors.deepOrange,
+              offset: 7,
+            ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(MdiIcons.arrowLeft),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     Navigator.pop(context);
+      //   },
+      //   child: Icon(MdiIcons.arrowLeft),
+      // ),
     );
   }
 }

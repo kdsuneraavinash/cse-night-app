@@ -1,3 +1,4 @@
+import 'package:cse_night/utils/alert.dart';
 import 'package:cse_night/utils/fluro_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -54,7 +55,10 @@ class ProgressCircleWidget extends StatelessWidget {
             child: GestureDetector(
               onTap: isCompleted
                   ? () => FluroRouter.navigate(context, "/end")
-                  : null,
+                  : () {
+                      Alert.showAlertBox(context,
+                          "Door shall open when $maxCount has reached the end of the road.\n\n$current/$maxCount");
+                    },
               child: LiquidCircularProgressIndicator(
                 value: current / maxCount,
                 valueColor: AlwaysStoppedAnimation(transitColor),

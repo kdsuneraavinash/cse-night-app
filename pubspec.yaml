@@ -52,9 +52,9 @@ flutter:
     - assets/puzzles/numbers/3.png
 
     - assets/puzzles/maps/0.jpg
-    # - assets/puzzles/maps/1.jpg
-    # - assets/puzzles/maps/2.jpg
-    # - assets/puzzles/maps/3.jpg
+    - assets/puzzles/maps/1.jpg
+    - assets/puzzles/maps/2.jpg
+    - assets/puzzles/maps/3.jpg
 
   fonts:
     - family: Hieroglify
