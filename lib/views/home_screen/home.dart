@@ -8,13 +8,12 @@ import 'package:cse_night/views/home_screen/puzzle_tile.dart';
 import 'package:cse_night/views/widgets/backdrop.dart';
 import 'package:cse_night/views/widgets/camera_fab.dart';
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:provider/provider.dart';
 
 void main() => runApp(HomeScreen());
 
 class HomeScreen extends StatelessWidget {
-  final maxPlayersCount = 4;
+  final maxPlayersCount = 30;
 
   @override
   Widget build(BuildContext context) {
@@ -103,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                     textColor: Colors.white,
                     onPressed: () {
                       Alert.showAlertBox(context,
-                          "Each clue will lead you to next.\n\n[Add more help data]");
+                          "Each puzzle will say you a location.\nGo to the answer to find the next question.");
                     },
                     child: Text("Help"),
                   ),

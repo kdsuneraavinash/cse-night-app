@@ -6,6 +6,6 @@ class PuzzleRand {
     int puzzleTypeLength = puzzleType.length;
     Random random =
         Random(indexNumberOnly * 10000000 + indexNumberOnly * puzzleTypeLength);
-    return random.nextInt(5);
+    return random.nextInt(4);
   }
 }

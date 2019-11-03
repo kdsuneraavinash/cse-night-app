@@ -47,8 +47,7 @@ class EndScreen extends StatelessWidget {
           label: Text("Download VR App"),
           icon: Icon(MdiIcons.download),
           onPressed: () {
-            Launcher.launchUrl(context,
-                "https://dl.static.1001fonts.net/niceid/f/a/fantaisieartistique.zip");
+            Launcher.launchUrl(context, "http://bit.ly/2oCZqyw");
           },
         ));
   }

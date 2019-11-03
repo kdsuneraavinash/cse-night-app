@@ -25,24 +25,35 @@ class User extends ChangeNotifier {
   bool get isLoggedIn => _username != null;
 
   String generateUniqueKey() {
-    int group = ValidIdStore.getGroup(_username);
+    return generateUniqueKeyForId(_username);
+  }
+
+  static String generateUniqueKeyForId(String username) {
+    int group = ValidIdStore.getGroup(username);
     int prime = 99929;
     List<int> groupPrime = [16561, 32183, 77611, 64577];
     Random random = Random.secure();
 
-    int randomNumber = random.nextInt(pow(2, 32));
+    int randomNumber = random.nextInt(pow(2, 27));
     int currentMod = randomNumber % prime;
     int requiredAdd = (groupPrime[group] - currentMod);
     randomNumber += requiredAdd;
 
     assert(randomNumber % prime == groupPrime[group], "Calculation Logic Bug");
 
-    String result = randomNumber.toString().padLeft(10, '0');
+    String result = randomNumber.toString().padLeft(9, '0');
     String fakePad = random.nextInt(99999).toString().padLeft(5, '0');
 
-    result += fakePad;
+    int num1 = (int.parse(username.substring(3, 4)) + 1) % 10;
+    int num2 = int.parse(fakePad.substring(0, 1));
+    int num3 = (int.parse(username.substring(4, 5)) + 1) % 10;
+    int num4 = int.parse(fakePad.substring(1, 2));
+    int num5 = (int.parse(username.substring(5, 6)) + 1) % 10;
+    int num6 = int.parse(fakePad.substring(2, 3));
+
+    result += "$num1$num2$num3$num4$num5$num6";
     assert(
-        int.parse(result.substring(0, result.length - 5)) % prime ==
+        int.parse(result.substring(0, result.length - 6)) % prime ==
             groupPrime[group],
         "Calculation Logic Bug (After Pad)");
 

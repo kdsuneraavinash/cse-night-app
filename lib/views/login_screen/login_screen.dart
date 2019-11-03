@@ -5,6 +5,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -18,9 +19,11 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   void initState() {
     super.initState();
-    _changeToGuestState();
-    SchedulerBinding.instance.addPostFrameCallback((_) {
-      Provider.of<User>(context).loadFromStorage(context);
+    PermissionHandler().requestPermissions([PermissionGroup.camera]).then((v) {
+      _changeToGuestState();
+      SchedulerBinding.instance.addPostFrameCallback((_) {
+        Provider.of<User>(context).loadFromStorage(context);
+      });
     });
   }
 

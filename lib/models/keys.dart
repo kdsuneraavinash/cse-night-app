@@ -6,35 +6,30 @@ class Keys {
         "cartouche",
         "oasis",
         "obelisk",
-        "ankh",
       ],
       "photo": [
         "vizier",
         "amun",
         "senet",
         "thebes",
-        "nefertiti",
       ],
       "number": [
         "kinen",
         "scribe",
         "khufu",
         "silt",
-        "delta",
       ],
       "map": [
         "obelisk",
         "hatsheput",
         "ramses",
         "akh",
-        "ba",
       ],
       "hieroglyphics": [
         "akhenaten",
         "akhet",
         "capstone",
         "demotic",
-        "deshret",
       ],
     };
 

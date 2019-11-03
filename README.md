@@ -1,6 +1,6 @@
 # cse_night
 
-CSE Night Puzzle App
+A new Flutter project.
 
 ## Getting Started
 
