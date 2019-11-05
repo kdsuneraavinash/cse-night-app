@@ -42,14 +42,14 @@ class Puzzles {
       ][index];
 
   static String numberPuzzle(int index) => [
-        "assets/puzzles/numbers/0.png", // examhall [kinen]
-        "assets/puzzles/numbers/1.png", // oldgym [scribe]
-        "assets/puzzles/numbers/2.png", // boatyard [khufu]
-        "assets/puzzles/numbers/3.png", // backgate [silt]
+        "assets/puzzles/numbers/0.jpg", // examhall [kinen]
+        "assets/puzzles/numbers/1.jpg", // oldgym [scribe]
+        "assets/puzzles/numbers/2.jpg", // boatyard [khufu]
+        "assets/puzzles/numbers/3.jpg", // backgate [silt]
       ][index];
 
   static String mapPuzzle(int index) => [
-        "assets/puzzles/maps/0.jpg", // score board ek gawa [obelisk]
+        "assets/puzzles/maps/0.jpg", // score board ek gawa [delta]
         "assets/puzzles/maps/1.jpg", // L eka gawa [hatsheput]
         "assets/puzzles/maps/2.jpg", // mech eka ehapaththe [ramses]
         "assets/puzzles/maps/3.jpg", // civil eka pitipasse tap ek [akh]

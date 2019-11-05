@@ -31,7 +31,6 @@ void main() {
 
   test("Test key group generation 4", () {
     String key = User.generateUniqueKeyForId("180239N");
-    print(key);
     expect(key, isNotNull);
     expect(int.parse(key.substring(0, 9)) % 99929, equals(64577));
     expect(key.substring(9, 10), equals("3"));

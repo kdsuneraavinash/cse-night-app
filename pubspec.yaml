@@ -33,6 +33,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.7.4 
+
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/icon/icon.png"
 
 flutter:
   uses-material-design: true
@@ -45,11 +51,11 @@ flutter:
     - assets/puzzles/photos/1.jpg
     - assets/puzzles/photos/2.jpg
     - assets/puzzles/photos/3.jpg
-
-    - assets/puzzles/numbers/0.png
-    - assets/puzzles/numbers/1.png
-    - assets/puzzles/numbers/2.png
-    - assets/puzzles/numbers/3.png
+    
+    - assets/puzzles/numbers/0.jpg
+    - assets/puzzles/numbers/1.jpg
+    - assets/puzzles/numbers/2.jpg
+    - assets/puzzles/numbers/3.jpg
 
     - assets/puzzles/maps/0.jpg
     - assets/puzzles/maps/1.jpg

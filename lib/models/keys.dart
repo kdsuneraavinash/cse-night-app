@@ -20,7 +20,7 @@ class Keys {
         "silt",
       ],
       "map": [
-        "obelisk",
+        "delta",
         "hatsheput",
         "ramses",
         "akh",
