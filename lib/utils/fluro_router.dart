@@ -1,5 +1,6 @@
 import 'package:cse_night/views/camera_screen/camera.dart';
 import 'package:cse_night/views/end_screen/end_screen.dart';
+import 'package:cse_night/views/end_screen/stat_screen.dart';
 import 'package:cse_night/views/home_screen/home.dart';
 import 'package:cse_night/views/login_screen/login_screen.dart';
 import 'package:cse_night/views/puzzle_screen/hieroglyphics_puzzle.dart';
@@ -62,6 +63,13 @@ class FluroRouter {
       "/end",
       handler: Handler(
         handlerFunc: (context, params) => EndScreen(),
+      ),
+    );
+
+    router.define(
+      "/end/stat",
+      handler: Handler(
+        handlerFunc: (context, params) => StatScreen(),
       ),
     );
 
