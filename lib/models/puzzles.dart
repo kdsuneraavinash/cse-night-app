@@ -30,8 +30,7 @@ class Puzzles {
             "And weeps for its unfulfilled destiny..", // iron auditoriam [cartouche]
         "Beware, for beyond these gates burns love,\n"
             "Brighter than the flames it's known for..", // apaya [oasis]
-        "They say the battles fought here are the hardest,\n"
-            "For the sole foe you meet here is yourself.", // lagaan [obelisk]
+        "Rules are forged here, with iron voices.", // lagaan [obelisk]
       ][index];
 
   static String photoPuzzle(int index) => [

@@ -61,10 +61,10 @@ class EndScreen extends StatelessWidget {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: FloatingActionButton.extended(
-          label: Text("Download VR App"),
+          label: Text("Download AR App"),
           icon: Icon(MdiIcons.download),
           onPressed: () {
-            Launcher.launchUrl(context, "http://bit.ly/2oCZqyw");
+            Launcher.launchUrl(context, "http://bit.ly/2C5wLVR");
           },
         ));
   }
