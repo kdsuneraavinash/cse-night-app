@@ -30,7 +30,7 @@ Rise of Pharaohs : Where technology meets creativity
     - If remainder was `77611` - group 3 (Osiris)
     - If remainder was `64577` - group 4 (Anubis)
   - Last 6 numbers revealed the index number. First, third and fifth numbers in the 6 letters revealed last numbers of the index when reduced by 1. (eg if index is `180345X` then last 6 numbers were `4?5?6?` where ? were random integers)
-- In the second app, people were required to enter the "secret key" given by the first app. Then it would present a small AR game and it would then present the invitation. For more info see the repository of that app. [https://github.com/kdsuneraavinash/](https://github.com/kdsuneraavinash/)
+- In the second app, people were required to enter the "secret key" given by the first app. Then it would present a small AR game and it would then present the invitation. For more info see the repository of that app. [https://github.com/chamikaCN/CSE_APP_Night_of_Pharaohs](https://github.com/chamikaCN/CSE_APP_Night_of_Pharaohs)
 
 ## Test Details
 
